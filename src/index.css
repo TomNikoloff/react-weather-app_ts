@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body { 
+  height: auto; 
+}
+
+:root {
+  /* Colors */
+  --tn-lighter-main: #323232;
+  --tn-primary: #8c52ff;
+  --tn-secondary: #fff;
+  --tn-mid-grey: #666;
+  --tn-light-grey: #bbb;
+  --tn-lighter-grey: #edeef5;
+  --tn-main-bg-color: #1c1c1c;
+  --tn-menu-bg-color: #101010;
+  --tn--bg--light: #ffffff;
+
+  --tn-text-color: rgb(33, 99, 151);
+  --tn--text--light: #1b232a;
+
+  --box--shadow--large: 0px 0px 50px 25px black;
+  --box--shadow--small: 0 10px 30px 5px black;
+
+  --tn-tansition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --tn-hover-overlay-light: rgba(85, 92, 105, 0.3);
+  --tn-hover-overlay-dark: #1c1c1c91;
+}
+
+body {
+  background-image: url("/src/assets/images/grain-background.png");
+  background-color: black !important;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--tn-text-color);
+}
+
+#root {
+  height: 100%;
+  margin: auto 0;
+  position: relative;
+}
+
+/* Custom Scrollbar - START */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--tn-lighter-main) black;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+  background-image: url("/src/assets/images/grain-background.png");
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  /*-webkit-box-shadow: none;*/
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--tn-lighter-main);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--tn-text-color);
+}
+
+
+
+/* Custom Scrollbar - END */
+
+h1, h2, h3 {
+  font-family: 'Manrope', sans-serif;
+}
+
+h3 {
+  color: rgb(33, 99, 151);
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 15px;;
+}
+
+hr {
+  border-color: #7b98b2;
+}
+
+.bi {
+  font-size: 30px;
+  color: #7b98b2;
+}
+
+.bi.bi-github {
+  color: #fff;
+}
