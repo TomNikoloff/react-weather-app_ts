@@ -24,7 +24,7 @@ const ForecastItem = ({index, dateTime, weatherCode, temp, tempUnit/*, main*/} :
 
     return (
         <>
-            {(index < 9) ? (
+            {index < 9 && (
                 <ForecastItemContainer>
                     {(index == 0) ? (
                         <p className="uk-text-center">Now</p>
@@ -43,7 +43,7 @@ const ForecastItem = ({index, dateTime, weatherCode, temp, tempUnit/*, main*/} :
                         <Temperature value={Math.round(temp)} tempUnit={tempUnit} />
                     </p>
                 </ForecastItemContainer>
-            ) : ('')}
+            )}
         </>
     )
 }

@@ -32,6 +32,7 @@ interface Props {
 const Forecast = ({weather, tempUnit} : Props) => {
 
     //console.log('Forecast Data:', weather);
+    
     return (
         <>
             {weather.list && (
